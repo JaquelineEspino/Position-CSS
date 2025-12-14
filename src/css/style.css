@@ -16,6 +16,8 @@ main{
     font-family: 'Cinzel Decorative', Times, serif;
     font-size: 50px;
     font-weight: 600;
+    text-shadow: 0 0 10px rgba(28, 93, 153, 0.7);
+    margin-bottom: 10px;
 }
 
 .Enlaces{
@@ -28,13 +30,40 @@ main{
 
 .Enlaces a{
     text-decoration: none;
+    color: #cda45e;
     font-size: 1.2rem;
-    font-weight: bold;
-    color: #639fab;
+    padding: 5px 15px;
+    /*border-bottom: 2px solid transparent;*/
+    transition: all 0.3s ease;
 }
 
-a:hover{
-    color: #1c5d99;
+.Enlaces a:hover{
+    color: #ffffff;
+    border-bottom: 2px solid #1c5d99;
+    text-shadow: 0 0 8px #1c5d99; 
+}
+#Sinopsis {
+    text-align: center;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border-top: 1px solid #cda45e;
+    border-bottom: 1px solid #cda45e;
+}
+
+#Sinopsis h2 {
+    color: #cda45e;
+    font-size: 2.5rem;
+}
+
+#Sinopsis h3{
+    font-size: 1.8rem;
+    color: #cda45e;
+}
+#Sinopsis p{
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #e0e0e0
 }
 
 .ficha-personaje{
