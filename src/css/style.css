@@ -1,0 +1,116 @@
+body {
+    background-color: #222222; 
+    color: #ffffff;
+    text-align: justify;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    margin: 15px; 
+}
+
+main{
+    margin: inherit;
+}
+
+#miID {
+    text-align: center;
+    color: #bbcde5;
+    font-family: 'Cinzel Decorative', Times, serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.Enlaces{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+    
+}
+
+.Enlaces a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #639fab;
+}
+
+a:hover{
+    color: #1c5d99;
+}
+
+.ficha-personaje{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    background-color: black;
+    border: 1px solid #cda45e;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);;
+}
+
+.imagen-personaje img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #cda45e;
+   
+}
+
+.info-personaje{
+    flex-grow: 1;
+}
+
+.info-personaje h2{
+    margin-top: 0;
+    color:#cda45e;
+}
+
+.datos-personaje{
+    list-style: none;
+    padding-left: 0;
+    margin: 15px 0;
+    font-size: 0.9rem;
+}
+
+.datos-personaje li {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.Comunidad {
+    background-color: #1c5d99;
+    display: block;
+    width: 50%;
+    margin: 50px auto;
+    padding: 30px;
+    border: 2px solid #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.formulario-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.formulario-flex input{
+    padding: 8px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+}
+
+.formulario-flex button{
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: #2222;
+    color: #cda45e;
+    border: 1px solid #cda45e;
+    font-weight: bold;
+}
