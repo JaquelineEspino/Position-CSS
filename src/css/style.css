@@ -110,15 +110,20 @@ main{
 }
 
 .Comunidad {
-    background-color: #1c5d99;
-    display: block;
-    width: 50%;
-    margin: 50px auto;
-    padding: 30px;
-    border: 2px solid #ffffff;
+    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    width: 60%;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+    border: 2px solid #cda45e;
     text-align: center;
-    border-radius: 10px;
-    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(205, 164, 94, 0.1);
+}
+
+.Comunidad h2{
+    color: #cda45e;
+    margin-bottom: 30px;
 }
 
 .formulario-flex{
@@ -129,17 +134,36 @@ main{
 }
 
 .formulario-flex input{
-    padding: 8px;
+   background-color: #2d2c2c;
+    border: 1px solid #5c5c5c;
+    color: #ffffff;
+    padding: 12px;
     width: 80%;
     border-radius: 5px;
-    border: none;
+    margin-bottom: 15px;
+}
+
+.formulario-flex input:focus {
+    outline: none;
+    border-color: #1c5d99; /* Borde azul brillante al escribir */
+    box-shadow: 0 0 8px rgba(28, 93, 153, 0.5);
 }
 
 .formulario-flex button{
-    padding: 10px 30px;
+    padding: 12px 40px;
     cursor: pointer;
-    background-color: #2222;
-    color: #cda45e;
-    border: 1px solid #cda45e;
+    background-color: #1c5d99;
+    color: white;
+    border: none;
+    border-radius: 5px;
     font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3 ease;
+    margin-top: 10px;
+}
+
+.formulario-flex button:hover{
+    background-color: #cda45e;
+    color: black;
+    transform: scale(1.05);
 }
