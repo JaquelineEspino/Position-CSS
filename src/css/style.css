@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222222; 
+    color: #ffffff;
+    text-align: justify;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    
+}
+
+main{
+    margin: 15px;
+}
+
+.barra-navegacion{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.95);
+    border-bottom: 2px solid #cda45e;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#miID {
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+    color: #bbcde5;
+    font-family: 'Cinzel Decorative', Times, serif;
+    font-size: 35px;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(28, 93, 153, 0.7);
+   
+}
+
+.Enlaces{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    
+}
+
+.Enlaces a{
+    text-decoration: none;
+    color: #cda45e;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    /*border-bottom: 2px solid transparent;*/
+    transition: all 0.3s ease;
+}
+
+.Enlaces a:hover{
+    color: #ffffff;
+    border-bottom: 2px solid #1c5d99;
+    text-shadow: 0 0 8px #1c5d99; 
+}
+#Sinopsis {
+    text-align: center;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border-top: 1px solid #cda45e;
+    border-bottom: 1px solid #cda45e;
+}
+
+#Sinopsis h2 {
+    color: #cda45e;
+    font-size: 2.5rem;
+}
+
+#Sinopsis h3{
+    font-size: 1.8rem;
+    color: #cda45e;
+}
+#Sinopsis p{
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #e0e0e0
+}
+
+.ficha-personaje{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    background-color: black;
+    border: 1px solid #cda45e;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);;
+}
+
+.imagen-personaje img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #cda45e;
+   
+}
+
+.info-personaje{
+    flex-grow: 1;
+}
+
+.info-personaje h2{
+    margin-top: 0;
+    color:#cda45e;
+}
+
+.datos-personaje{
+    list-style: none;
+    padding-left: 0;
+    margin: 15px 0;
+    font-size: 0.9rem;
+}
+
+.datos-personaje li {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.Comunidad {
+    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    width: 60%;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+    border: 2px solid #cda45e;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(205, 164, 94, 0.1);
+}
+
+.Comunidad h2{
+    color: #cda45e;
+    margin-bottom: 30px;
+}
+
+.formulario-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.formulario-flex input{
+   background-color: #2d2c2c;
+    border: 1px solid #5c5c5c;
+    color: #ffffff;
+    padding: 12px;
+    width: 80%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.formulario-flex input:focus {
+    outline: none;
+    border-color: #1c5d99; /* Borde azul brillante al escribir */
+    box-shadow: 0 0 8px rgba(28, 93, 153, 0.5);
+}
+
+.formulario-flex button{
+    padding: 12px 40px;
+    cursor: pointer;
+    background-color: #1c5d99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3 ease;
+    margin-top: 10px;
+}
+
+.formulario-flex button:hover{
+    background-color: #cda45e;
+    color: black;
+    transform: scale(1.05);
+}
+
+footer{
+    background-color: #0d0d0d;
+    padding: 40px;
+    text-align: center;
+    border-top: 1px solid #cda45e;
+    margin-top: 50px;
+}
+
+.footer-contenido p{
+    margin: 10px 0;
+    color: #888;
+}
+
+.footer-contenido a{
+    color: #cda45e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-contenido a:hover{
+    color: #1c5d99;
+    text-decoration: underline;
+}
+
+.footer-cookies{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1c5d99;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-top: 2px solid #cda45e;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-cookies button{
+    background-color: #222;
+    color: #cda45e;
+    border: 1px solid #cda45e;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.footer-cookies button:hover{
+    background-color: #cda45e;
+    color: #222;
+}
