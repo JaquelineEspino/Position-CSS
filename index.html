@@ -14,8 +14,13 @@
 </head>
 <body>
     <header class="barra-navegacion">
-        <h1 id="miID">Bienvenido al Mundo Arcano</h1>
-        <nav class="Enlaces">
+        <div class="header-flex">
+            <h1 id="miID">Bienvenido al Mundo Arcano</h1>
+            <button class="burger-menu" id="btnMenu">
+                ☰
+            </button>
+        </div>
+        <nav class="Enlaces" id="navigationMenu">
             <a href="#Sinopsis">Arcane</a>
             <a href="#Personajes">Personajes</a>
             <a href="#Comunidad">Comunidad</a> 
@@ -311,4 +316,5 @@
         <button onclick="this.parentElement.style.display='none'">Aceptar</button>
     </div>
 </body>
+<script src="./src/js/menu.js"></script>
 </html>

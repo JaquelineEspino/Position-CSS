@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -32,6 +36,18 @@ main{
     font-weight: 600;
     text-shadow: 0 0 10px rgba(28, 93, 153, 0.7);
    
+}
+
+.burger-menu {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #cda45e;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 .Enlaces{
@@ -236,4 +252,72 @@ footer{
 .footer-cookies button:hover{
     background-color: #cda45e;
     color: #222;
+}
+
+@media screen and (max-width: 768px) {
+
+    .barra-navegacion{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .header-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+
+    #miID {
+        font-size: 1.2rem;
+        margin: 0;
+        padding-right: 60px;
+        text-align: left;
+        padding: 0;
+    }
+
+    .burger-menu {
+        display: block;
+        position: static;
+        font-size: 1.8rem;
+        margin-left: 15px;
+    }
+
+    .Enlaces {
+        flex-direction: column;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.95);
+        border-top: 1px solid #cda45e;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .Enlaces.active {
+        display: flex;
+    }
+
+    .ficha-personaje {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    .datos-personaje{
+        display: inline-block;
+        text-align: left;
+    }
+
+    .Comunidad {
+        width: 90%;
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    .footer-cookies{
+        flex-direction: column;
+        gap: 10px;
+    }
+
 }
